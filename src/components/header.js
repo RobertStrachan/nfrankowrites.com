@@ -84,13 +84,13 @@ const Header = ({ siteTitle, authorName, authorTag, headerImage }) => (
         </Link>
         <div className="navbar-dropdown is-boxed">
           <a className="navbar-item" href="/documentation/overview/start/">
-            Overview
+            Romantic Comedy of Errors
           </a>
           <a className="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-            Modifiers
+            Technically Scripted
           </a>
           <a className="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-            Columns
+            Technically Married
           </a>
           <a className="navbar-item" href="https://bulma.io/documentation/layout/container/">
             Layout
@@ -106,14 +106,13 @@ const Header = ({ siteTitle, authorName, authorTag, headerImage }) => (
             Components
           </a>
         </div>
-        <Link className="navbar-item" to="/about/">
+      </div>
+      <Link className="navbar-item" to="/about/">
         About
       </Link>
       <Link className="navbar-item" to="/contact/">
         Contact
       </Link>
-
-      </div>
     </div>
 
     <div className="navbar-end">
