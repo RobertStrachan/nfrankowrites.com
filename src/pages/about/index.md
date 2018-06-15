@@ -1,7 +1,6 @@
 ---
-templateKey: 'about-page'
-path: /about
 title: About the author
+image: /assets/typewriter-nfranko.jpg
 ---
 ### N Franko
 
