@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: RobertStrachan/nfrankowrites.com.git
+  repo: RobertStrachan/nfrankowrites.com
 
 media_folder: static/assets
 public_folder: assets
