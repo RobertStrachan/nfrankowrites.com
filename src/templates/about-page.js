@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
 export const AboutPageTemplate = ({
+
   title, 
   content, 
   contentComponent
@@ -18,6 +19,9 @@ export const AboutPageTemplate = ({
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                   {title}
                 </h2>
+                <div>
+
+                </div>
                 <PageContent className="content" content={content} />
               </div>
             </div>
@@ -59,5 +63,6 @@ AboutPage.propTypes = {
           title
         }
       }
+      
     }
   `
