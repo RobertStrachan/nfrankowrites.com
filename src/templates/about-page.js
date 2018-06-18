@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
 export const AboutPageTemplate = ({
-
+  image,
   title, 
   content, 
   contentComponent
@@ -16,12 +16,11 @@ export const AboutPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
+
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                   {title}
                 </h2>
-                <div>
-
-                </div>
+                <img src={image}/>
                 <PageContent className="content" content={content} />
               </div>
             </div>
@@ -32,6 +31,7 @@ export const AboutPageTemplate = ({
 }
 
 AboutPageTemplate.propTypes = {
+    image: PropTypes.string,
     title: PropTypes.string.isRequired,
     content: PropTypes.string,
     contentComponent: PropTypes.func
@@ -43,6 +43,7 @@ const AboutPage = ({ data }) => {
     return (
         <AboutPageTemplate
             contentComponent={HTMLContent}
+            image={post.frontmatter.image}
             title={post.frontmatter.title}
             content={post.html}
         />
@@ -61,6 +62,7 @@ AboutPage.propTypes = {
         html
         frontmatter {
           title
+          image
         }
       }
       
