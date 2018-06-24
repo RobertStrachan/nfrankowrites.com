@@ -1,6 +1,6 @@
 backend:
   name: github
-  
+  branch: books
   repo: RobertStrachan/nfrankowrites.com
 
 media_folder: static/assets
