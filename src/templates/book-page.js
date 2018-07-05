@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
-import { AboutPageTemplate } from './about-page';
+import RetailLinks from '../components/RetailLinks'
 
 
 export const BookPageTemplate = ({
     image,
     title,
+    subtitle,
+    retailIndex,
     content,
     contentComponent
 }) => {
@@ -18,12 +20,19 @@ export const BookPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="section">
-
+                <h1>{title}</h1>
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {title}
+                  {subtitle}
                 </h2>
-                <img src={image}/>
+                <div className="columns">
+                <div className="column">
+                <img src={image}/>                
+                </div>
+                <div className="column">
                 <PageContent className="content" content={content} />
+                </div>
+                </div>
+                <RetailLinks retailIndex={retailIndex}/>
               </div>
             </div>
           </div>
@@ -35,6 +44,8 @@ export const BookPageTemplate = ({
 BookPageTemplate.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
+    retailIndex: PropTypes.string,
     content: PropTypes.string,
     contentComponent: PropTypes.func
 }
@@ -47,6 +58,8 @@ const BookPage = ({ data }) => {
             contentComponent={HTMLContent}
             image={post.frontmatter.image}
             title={post.frontmatter.title}
+            subtitle={post.frontmatter.subtitle}
+            retailIndex={post.frontmatter.retailIndex}
             content={post.html}
         />
     )
@@ -64,7 +77,9 @@ BookPage.propTypes = {
         html
         frontmatter {
           title
+          subtitle
           image
+          retailIndex
         }
       }
       

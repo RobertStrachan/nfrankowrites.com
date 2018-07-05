@@ -1,6 +1,6 @@
 ---
 templateKey: books-page
-title: Books
+title: Romantic Comedy of Errors
 image: /assets/typewriter-nfranko.jpg
 heading: Look at my books
 description: >-

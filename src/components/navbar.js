@@ -24,7 +24,7 @@ class Navbar extends React.Component{
                     <Link className="navbar-item" to="/">
                         N. Franko
                     </Link>
-                    <div className="button navbar-burger burger" onClick={this.toggleNav} data-target="navbarExampleTransparentExample" >
+                    <div className="navbar-burger burger" onClick={this.toggleNav} data-target="navbarExampleTransparentExample" >
                         <span></span>
                         <span></span>
                         <span></span>
@@ -37,32 +37,26 @@ class Navbar extends React.Component{
                 Home
                 </Link>
                 <div className="navbar-item has-dropdown is-hoverable">
-                <Link className="navbar-link" to="/books/">
+                <Link className="navbar-link" to="/romantic-comedy-of-errors/">
                     Books
                 </Link>
                 <div className="navbar-dropdown is-boxed">
-                    <a className="navbar-item" href="/documentation/overview/start/">
+                    <Link className="navbar-item" to="/romantic-comedy-of-errors/">
                     Romantic Comedy of Errors
-                    </a>
-                    <a className="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+                    </Link>
+                    {/* <Link className="navbar-item" to="/technically-scripted/">
                     Technically Scripted
-                    </a>
-                    <a className="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                    </Link>
+                    <Link className="navbar-item" to="/technically-speaking/">
+                    Technically Speaking
+                    </Link>
+                    <Link className="navbar-item" to="/technically-married/">
                     Technically Married
-                    </a>
-                    <a className="navbar-item" href="https://bulma.io/documentation/layout/container/">
-                    Layout
-                    </a>
-                    <a className="navbar-item" href="https://bulma.io/documentation/form/general/">
-                    Form
-                    </a>
+                    </Link> */}
                     <hr className="navbar-divider"/>
-                    <a className="navbar-item" href="https://bulma.io/documentation/elements/box/">
-                    Elements
-                    </a>
-                    <a className="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-                    Components
-                    </a>
+                    <Link className="navbar-item" to="/the-runaway/">
+                    The Runaway
+                    </Link>
                 </div>
                 </div>
                 <Link className="navbar-item" to="/about/">
