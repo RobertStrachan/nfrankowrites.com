@@ -1,18 +1,19 @@
 ---
 templateKey: books-page
 title: Romantic Comedy of Errors
-books:
-  - title: Technically Scripted
-    subtitle: A Romantic Comedy of Errors
-    book_cover: /assets/covers/technically-scripted-cover.jpg
-    description:  >-
-      He’s a bad boy movie star. I'm just a failed reporter. This assignment was supposed to be temporary. So why does it feel like our love isn’t just scripted?
+main:
+  books:
+    - title: Technically Scripted
+      subtitle: A Romantic Comedy of Errors
+      book_cover: /assets/covers/technically-scripted-cover.jpg
+      description:  >-
+        He’s a bad boy movie star. I'm just a failed reporter. This assignment was supposed to be temporary. So why does it feel like our love isn’t just scripted?
 
-      After being fired from my job as a reporter and finding my boyfriend cheating on me, I figured I owed it to myself to have a public meltdown. I just didn’t expect it to be in front of Hollywood’s biggest, most egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my photo all over the tabloids and called me is girlfriend!
+        After being fired from my job as a reporter and finding my boyfriend cheating on me, I figured I owed it to myself to have a public meltdown. I just didn’t expect it to be in front of Hollywood’s biggest, most egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my photo all over the tabloids and called me is girlfriend!
 
-      Now, I’m trying to navigate this strange world of Hollywood glitz and glamour because Ryan needs to clean up his public image. For some reason, he thinks I’m the one to do just that. What he doesn’t know is that I’m a failure. I failed as a musician. I failed as a reporter. Now I’m failing as a fake girlfriend because my feelings for this man are very, very real.
+        Now, I’m trying to navigate this strange world of Hollywood glitz and glamour because Ryan needs to clean up his public image. For some reason, he thinks I’m the one to do just that. What he doesn’t know is that I’m a failure. I failed as a musician. I failed as a reporter. Now I’m failing as a fake girlfriend because my feelings for this man are very, very real.
 
-      If you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, Technically Scripted, book one of the Romantic Comedy of Errors.
+        If you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, Technically Scripted, book one of the Romantic Comedy of Errors.
 description: >-
   blah blaha b;a
   anyone.
@@ -51,7 +52,7 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-main:
+main2:
   heading: Great coffee with no compromises
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.

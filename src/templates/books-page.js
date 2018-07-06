@@ -8,11 +8,11 @@ import Pricing from '../components/Pricing'
 export const BooksPageTemplate = ({
   image,
   title,
-  books,
   heading,
   description,
-  intro,
   main,
+  intro,
+  main2,
   testimonials,
   fullImage,
   pricing,
@@ -37,7 +37,7 @@ export const BooksPageTemplate = ({
                   {title}
                 </h2>
               </div>
-              <Books books={books} />
+              <Books books={main.books} />
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-2">
@@ -50,9 +50,9 @@ export const BooksPageTemplate = ({
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-3">
-                    {main.heading}
+                    {main2.heading}
                   </h3>
-                  <p>{main.description}</p>
+                  <p>{main2.description}</p>
                 </div>
               </div>
               <div className="tile is-ancestor">
@@ -62,8 +62,8 @@ export const BooksPageTemplate = ({
                       <article className="tile is-child">
                         <img
                           style={{ borderRadius: '5px' }}
-                          src={main.image1.image}
-                          alt={main.image1.alt}
+                          src={main2.image1.image}
+                          alt={main2.image1.alt}
                         />
                       </article>
                     </div>
@@ -71,8 +71,8 @@ export const BooksPageTemplate = ({
                       <article className="tile is-child">
                         <img
                           style={{ borderRadius: '5px' }}
-                          src={main.image2.image}
-                          alt={main.image2.alt}
+                          src={main2.image2.image}
+                          alt={main2.image2.alt}
                         />
                       </article>
                     </div>
@@ -81,8 +81,8 @@ export const BooksPageTemplate = ({
                     <article className="tile is-child">
                       <img
                         style={{ borderRadius: '5px' }}
-                        src={main.image3.image}
-                        alt={main.image3.alt}
+                        src={main2.image3.image}
+                        alt={main2.image3.alt}
                       />
                     </article>
                   </div>
@@ -111,11 +111,13 @@ BooksPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  books: PropTypes.array,
+  main: PropTypes.shape({
+    books: PropTypes.array,
+  }),
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-  main: PropTypes.shape({
+  main2: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
     image1: PropTypes.object,
@@ -139,10 +141,10 @@ const BooksPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
-      books={frontmatter.books}
+      main={frontmatter.main}
       description={frontmatter.description}
       intro={frontmatter.intro}
-      main={frontmatter.main}
+      main2={frontmatter.main2}
       testimonials={frontmatter.testimonials}
       fullImage={frontmatter.full_image}
       pricing={frontmatter.pricing}
@@ -165,11 +167,13 @@ export const booksPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        books {
-          title
-          subtitle
-          book_cover
-          description
+        main {
+          books {
+            title
+            subtitle
+            book_cover
+            description
+          }
         }
         image
         heading
@@ -182,7 +186,7 @@ export const booksPageQuery = graphql`
           heading
           description
         }
-        main {
+        main2 {
           heading
           description
           image1 {

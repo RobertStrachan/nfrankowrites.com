@@ -12,7 +12,7 @@ const BooksPagePreview = ({ entry, getAsset }) => {
   const entryPricingPlans = entry.getIn(['data', 'pricing', 'plans'])
   const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : []
 
-  const entryBooks = entry.getIn(['data', 'books'])
+  const entryBooks = entry.getIn(['data', 'main', 'books'])
   const books = entryBooks ? entryBooks.toJS() : []
 
   return (
@@ -20,22 +20,22 @@ const BooksPagePreview = ({ entry, getAsset }) => {
       image={entry.getIn(['data', 'image'])}
       title={entry.getIn(['data', 'title'])}
       description={entry.getIn(['data', 'description'])}
-      books={books}
+      main={{ books }}
       intro={{ blurbs }}
-      main={{
-        heading: entry.getIn(['data', 'main', 'heading']),
-        description: entry.getIn(['data', 'main', 'description']),
+      main2={{
+        heading: entry.getIn(['data', 'main2', 'heading']),
+        description: entry.getIn(['data', 'main2', 'description']),
         image1: {
-          image: getAsset(entry.getIn(['data', 'main', 'image1', 'image'])),
-          alt: entry.getIn(['data', 'main', 'image1', 'alt']),
+          image: getAsset(entry.getIn(['data', 'main2', 'image1', 'image'])),
+          alt: entry.getIn(['data', 'main2', 'image1', 'alt']),
         },
         image2: {
-          image: getAsset(entry.getIn(['data', 'main', 'image2', 'image'])),
-          alt: entry.getIn(['data', 'main', 'image2', 'alt']),
+          image: getAsset(entry.getIn(['data', 'main2', 'image2', 'image'])),
+          alt: entry.getIn(['data', 'main2', 'image2', 'alt']),
         },
         image3: {
-          image: getAsset(entry.getIn(['data', 'main', 'image3', 'image'])),
-          alt: entry.getIn(['data', 'main', 'image3', 'alt']),
+          image: getAsset(entry.getIn(['data', 'main2', 'image3', 'image'])),
+          alt: entry.getIn(['data', 'main2', 'image3', 'alt']),
         },
       }}
       fullImage={entry.getIn(['data', 'full_image'])}
