@@ -14,9 +14,7 @@ books:
 
       If you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, Technically Scripted, book one of the Romantic Comedy of Errors.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
+  blah blaha b;a
   anyone.
 intro:
   blurbs:

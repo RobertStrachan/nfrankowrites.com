@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Books from '../components/Books'
 import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
@@ -7,6 +8,7 @@ import Pricing from '../components/Pricing'
 export const BooksPageTemplate = ({
   image,
   title,
+  books,
   heading,
   description,
   intro,
@@ -35,6 +37,7 @@ export const BooksPageTemplate = ({
                   {title}
                 </h2>
               </div>
+              <Books books={books} />
               <div className="columns">
                 <div className="column is-7">
                   <h3 className="has-text-weight-semibold is-size-2">
@@ -108,6 +111,7 @@ BooksPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
+  books: PropTypes.array,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -135,6 +139,7 @@ const BooksPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       heading={frontmatter.heading}
+      books={frontmatter.books}
       description={frontmatter.description}
       intro={frontmatter.intro}
       main={frontmatter.main}
@@ -160,6 +165,12 @@ export const booksPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        books {
+          title
+          subtitle
+          book_cover
+          description
+        }
         image
         heading
         description

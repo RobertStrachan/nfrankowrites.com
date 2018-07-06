@@ -12,19 +12,15 @@ const BooksPagePreview = ({ entry, getAsset }) => {
   const entryPricingPlans = entry.getIn(['data', 'pricing', 'plans'])
   const pricingPlans = entryPricingPlans ? entryPricingPlans.toJS() : []
 
+  const entryBooks = entry.getIn(['data', 'books'])
+  const books = entryBooks ? entryBooks.toJS() : []
 
   return (
     <BooksPageTemplate
       image={entry.getIn(['data', 'image'])}
       title={entry.getIn(['data', 'title'])}
-      heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
-      books={{
-        title: entry.getIn(['data', 'books', 'title']),
-        subtitle: entry.getIn(['data', 'books', 'subtitle']),
-        book_cover: entry.getIn(['data', 'books', 'book_cover']),
-        description: entry.getIn(['data', 'books', 'description']),
-      }}
+      books={books}
       intro={{ blurbs }}
       main={{
         heading: entry.getIn(['data', 'main', 'heading']),
