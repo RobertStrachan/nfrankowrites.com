@@ -14,6 +14,13 @@ main:
         Now, I’m trying to navigate this strange world of Hollywood glitz and glamour because Ryan needs to clean up his public image. For some reason, he thinks I’m the one to do just that. What he doesn’t know is that I’m a failure. I failed as a musician. I failed as a reporter. Now I’m failing as a fake girlfriend because my feelings for this man are very, very real.
 
         If you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, Technically Scripted, book one of the Romantic Comedy of Errors.
+    - title: Technically Speaking
+      subtitle: Another Romantic Comedy of Errors
+      book_cover: /assets/covers/technically-speaking-cover.jpg
+      description: >-
+        sadsadagd
+        sadsadsadsad
+        sadsadsadsa
 description: >-
   blah blaha b;a
   anyone.
