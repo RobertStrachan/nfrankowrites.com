@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
 
 const Books = ({ books }) => (
   <div className="columns is-multiline">
     {books.map(book => (
-      <div key={v4()} className="column is-6">
+      <div key={book.book_cover} className="column is-6">
         <section className="section">
           <div className="has-text-centered">
             <h1>{book.title}</h1>
