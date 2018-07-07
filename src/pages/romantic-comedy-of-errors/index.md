@@ -3,39 +3,37 @@ templateKey: books-page
 title: Romantic Comedy of Errors
 main:
   books:
-    - title: Technically Scripted
+    - Book_cover: /assets/technically-scripted-cover.jpg
+      Description: "**He’s a bad boy movie star. I'm just a failed reporter. This assignment was supposed to be temporary. So why does it feel like our love isn’t just scripted?\r**\n\n\r\n\nAfter being fired from my job as a reporter and finding my boyfriend cheating on me, I figured I owed it to myself to have a public meltdown. I just didn’t expect it to be in front of Hollywood’s biggest, most egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my photo all over the tabloids and called me is girlfriend!\r\n\n\r\n\nNow, I’m trying to navigate this strange world of Hollywood glitz and glamour because Ryan needs to clean up his public image. For some reason, he thinks I’m the one to do just that. What he doesn’t know is that I’m a failure. I failed as a musician. I failed as a reporter. Now I’m failing as a fake girlfriend because my feelings for this man are _very, very real.\r_\n\n\r\n\nIf you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, _Technically Scripted_, book one of the _Romantic Comedy of Errors_."
       subtitle: A Romantic Comedy of Errors
-      book_cover: /assets/covers/technically-scripted-cover.jpg
-      description:  >-
-        He’s a bad boy movie star. I'm just a failed reporter. This assignment was supposed to be temporary. So why does it feel like our love isn’t just scripted?
-
-        After being fired from my job as a reporter and finding my boyfriend cheating on me, I figured I owed it to myself to have a public meltdown. I just didn’t expect it to be in front of Hollywood’s biggest, most egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my photo all over the tabloids and called me is girlfriend!
-
-        Now, I’m trying to navigate this strange world of Hollywood glitz and glamour because Ryan needs to clean up his public image. For some reason, he thinks I’m the one to do just that. What he doesn’t know is that I’m a failure. I failed as a musician. I failed as a reporter. Now I’m failing as a fake girlfriend because my feelings for this man are very, very real.
-
-        If you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, Technically Scripted, book one of the Romantic Comedy of Errors.
-    - title: Technically Speaking
-      subtitle: Another Romantic Comedy of Errors
-      book_cover: /assets/covers/technically-speaking-cover.jpg
-      description: >-
-        sadsadagd
-        sadsadsadsad
-        sadsadsadsa
-description: >-
-  blah blaha b;a
-  anyone.
+      title: Technically Scripted
+    - subtitle: Another Romantic Comedy of Errors
+      title: Technically Speaking
 intro:
   blurbs:
-    - title: Technically Scripted
-      image: /assets/covers/technically-scripted-cover.jpg
+    - image: /assets/covers/technically-scripted-cover.jpg
       text: >
-        He’s a bad boy movie star. I'm just a failed reporter. This assignment was supposed to be temporary. So why does it feel like our love isn’t just scripted?
+        He’s a bad boy movie star. I'm just a failed reporter. This assignment
+        was supposed to be temporary. So why does it feel like our love isn’t
+        just scripted?
 
-        After being fired from my job as a reporter and finding my boyfriend cheating on me, I figured I owed it to myself to have a public meltdown. I just didn’t expect it to be in front of Hollywood’s biggest, most egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my photo all over the tabloids and called me is girlfriend!
+        After being fired from my job as a reporter and finding my boyfriend
+        cheating on me, I figured I owed it to myself to have a public meltdown.
+        I just didn’t expect it to be in front of Hollywood’s biggest, most
+        egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my
+        photo all over the tabloids and called me is girlfriend!
 
-        Now, I’m trying to navigate this strange world of Hollywood glitz and glamour because Ryan needs to clean up his public image. For some reason, he thinks I’m the one to do just that. What he doesn’t know is that I’m a failure. I failed as a musician. I failed as a reporter. Now I’m failing as a fake girlfriend because my feelings for this man are very, very real.
+        Now, I’m trying to navigate this strange world of Hollywood glitz and
+        glamour because Ryan needs to clean up his public image. For some
+        reason, he thinks I’m the one to do just that. What he doesn’t know is
+        that I’m a failure. I failed as a musician. I failed as a reporter. Now
+        I’m failing as a fake girlfriend because my feelings for this man are
+        very, very real.
 
-        If you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, Technically Scripted, book one of the Romantic Comedy of Errors.
+        If you like your romcoms to be laugh-out-loud with a few twists and
+        turns and a touch of sweetness, then you’ll love N. Franko’s debut
+        novella, Technically Scripted, book one of the Romantic Comedy of
+        Errors.
     - image: /assets/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
@@ -56,13 +54,14 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
+description: blah blaha b;a anyone.
 main2:
-  heading: Great coffee with no compromises
   description: >
     We hold our coffee to the highest standards from the shrub to the cup.
     That’s why we’re meticulous and transparent about each step of the coffee’s
     journey. We personally visit each farm to make sure the conditions are
     optimal for the plants, farmers and the local environment.
+  heading: Great coffee with no compromises
   image1:
     alt: A close-up of a paper filter filled with ground coffee
     image: /assets/products-grid3.jpg
@@ -83,11 +82,11 @@ testimonials:
       stance on empowering farmers and transparency.
 full_image: /assets/products-full-width.jpg
 pricing:
-  heading: Monthly subscriptions
   description: >-
     We make it easy to make great coffee a part of your life. Choose one of our
     monthly subscription plans to receive great coffee at your doorstep each
     month. Contact us about more details and payment info.
+  heading: Monthly subscriptions
   plans:
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:
