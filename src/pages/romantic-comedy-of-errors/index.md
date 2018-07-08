@@ -4,18 +4,39 @@ title: Romantic Comedy of Errors
 main:
   books:
     - book_cover: /assets/technically-scripted-cover.jpg
-      description: |
-        **He’s a bad boy movie star. I'm just a failed reporter. This assignment was supposed to be temporary. So why does it feel like our love isn’t just scripted?**
-        
-        After being fired from my job as a reporter and finding my boyfriend cheating on me, I figured I owed it to myself to have a public meltdown. I just didn’t expect it to be in front of Hollywood’s biggest, most egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my photo all over the tabloids and called me is girlfriend!
-        
-        Now, I’m trying to navigate this strange world of Hollywood glitz and glamour because Ryan needs to clean up his public image. For some reason, he thinks I’m the one to do just that. What he doesn’t know is that I’m a failure. I failed as a musician. I failed as a reporter. Now I’m failing as a fake girlfriend because my feelings for this man are _very, very real._
-        
-        If you like your romcoms to be laugh-out-loud with a few twists and turns and a touch of sweetness, then you’ll love N. Franko’s debut novella, _Technically Scripted_, book one of the _Romantic Comedy of Errors_.
       subtitle: A Romantic Comedy of Errors
       title: Technically Scripted
+      description: >-
+
+
+        # _**THIS IS A TEST!!!**_
+
+
+        **He’s a bad boy movie star. I'm just a failed reporter. This assignment
+        was supposed to be temporary. So why does it feel like our love isn’t
+        just scripted?**
+
+
+        After being fired from my job as a reporter and finding my boyfriend
+        cheating on me, I figured I owed it to myself to have a public meltdown.
+        I just didn’t expect it to be in front of Hollywood’s biggest, most
+        egotistical movie star, Ryan Vexler—or the paparazzi, who plastered my
+        photo all over the tabloids and called me is girlfriend!
+
+
+        Now, I’m trying to navigate this strange world of Hollywood glitz and
+        glamour because Ryan needs to clean up his public image. For some
+        reason, he thinks I’m the one to do just that. What he doesn’t know is
+        that I’m a failure. I failed as a musician. I failed as a reporter. Now
+        I’m failing as a fake girlfriend because my feelings for this man are
+        _very, very real._
+
+
+        If you like your romcoms to be laugh-out-loud with a few twists and
+        turns and a touch of sweetness, then you’ll love N. Franko’s debut
+        novella, _Technically Scripted_, book one of the _Romantic Comedy of
+        Errors_.
     - book_cover: /assets/technically-speaking-cover.jpg
-      description: 
       subtitle: Another Romantic Comedy of Errors
       title: Technically Speaking
 intro:
