@@ -22,7 +22,7 @@ const Header = ({ siteTitle, authorName, authorTag, headerImage }) => (
       {/* <img src={HeaderImage} alt="flowers" 
       /> */}
       <Img  sizes={headerImage.sizes} style={{
-          maxHeight: "400px",
+          // maxHeight: "400px",
       }}
       />
       <div className="header"

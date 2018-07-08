@@ -16,6 +16,7 @@ export const BooksPageTemplate = ({
   testimonials,
   fullImage,
   pricing,
+  html,
 }) => (
   <section className="section section--gradient">
     <div className="container">
@@ -37,15 +38,8 @@ export const BooksPageTemplate = ({
                   {title}
                 </h2>
               </div>
-              <Books books={main.books} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-              </div>
+              <Books books={main.books}/>
+
               <Features gridItems={intro.blurbs} />
               <div className="columns">
                 <div className="column is-7">
@@ -134,7 +128,7 @@ BooksPageTemplate.propTypes = {
 }
 
 const BooksPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter} = data.markdownRemark
 
   return (
     <BooksPageTemplate
@@ -169,10 +163,10 @@ export const booksPageQuery = graphql`
         title
         main {
           books {
-            title
-            subtitle
             book_cover
             description
+            subtitle
+            title
           }
         }
         image
