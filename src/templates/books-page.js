@@ -48,23 +48,6 @@ BooksPageTemplate.propTypes = {
       })
     ),
   }),
-  // intro: PropTypes.shape({
-  //   blurbs: PropTypes.array,
-  // }),
-  // main2: PropTypes.shape({
-  //   heading: PropTypes.string,
-  //   description: PropTypes.string,
-  //   image1: PropTypes.object,
-  //   image2: PropTypes.object,
-  //   image3: PropTypes.object,
-  // }),
-  // testimonials: PropTypes.array,
-  // fullImage: PropTypes.string,
-  // pricing: PropTypes.shape({
-  //   heading: PropTypes.string,
-  //   description: PropTypes.string,
-  //   plans: PropTypes.array,
-  // }),
 }
 
 const BooksPage = ({ data }) => {
@@ -76,12 +59,6 @@ const BooksPage = ({ data }) => {
       title={frontmatter.title}
       heading={frontmatter.heading}
       main={frontmatter.main}
-      // description={frontmatter.description}
-      // intro={frontmatter.intro}
-      // main2={frontmatter.main2}
-      // testimonials={frontmatter.testimonials}
-      // fullImage={frontmatter.full_image}
-      // pricing={frontmatter.pricing}
     />
   )
 }

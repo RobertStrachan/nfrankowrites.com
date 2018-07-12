@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
-import RetailLinks from '../components/RetailLinks'
+import Retail from '../components/Retail'
 
 
 export const BookPageTemplate = ({
     image,
     title,
     subtitle,
-    retailIndex,
     content,
-    contentComponent
+    contentComponent,
+    retail
 }) => {
     const PageContent = contentComponent || Content
 
@@ -30,9 +30,9 @@ export const BookPageTemplate = ({
                 </div>
                 <div className="column">
                 <PageContent className="content" content={content} />
+                <Retail retail={retail} />
                 </div>
                 </div>
-                <RetailLinks retailIndex={retailIndex}/>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ BookPageTemplate.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
-    retailIndex: PropTypes.string,
+    retail: PropTypes.array,
     content: PropTypes.string,
     contentComponent: PropTypes.func
 }
@@ -59,7 +59,7 @@ const BookPage = ({ data }) => {
             image={post.frontmatter.image}
             title={post.frontmatter.title}
             subtitle={post.frontmatter.subtitle}
-            retailIndex={post.frontmatter.retailIndex}
+            retail={post.frontmatter.retail}
             content={post.html}
         />
     )
@@ -79,7 +79,10 @@ BookPage.propTypes = {
           title
           subtitle
           image
-          retailIndex
+          retail {
+            name
+            url
+          }
         }
       }
       

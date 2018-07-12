@@ -19,13 +19,14 @@ collections:
           - {label: "Title", name: title, widget: "string"}
           - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/technically-scripted/index.md"
-        label: "Technically Scripted"
-        name: "technically-scripted"
+      - file: "src/pages/the-runaway/index.md"
+        label: "The Runaway"
+        name: "the-runaway"
         fields: 
           - {label: "Title", name: title, widget: "string"}
           - {label: Image, name: image, widget: image}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: Retail, name: retail, widget: list, required: false, fields: [ {label: Name, name: name, widget: string}, {label: Url, name: url, widget: string}]}
       - file: "src/pages/products/index.md"
         label: "Products Page"
         name: "products"
