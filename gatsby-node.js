@@ -22,7 +22,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
-    console.log(JSON.stringify(result, null, 4))
+    // console.log(JSON.stringify(result, null, 4))
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))
       return Promise.reject(result.errors)

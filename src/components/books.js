@@ -6,7 +6,8 @@ import Retail from '../components/Retail'
 
 
 
-const Books = ({ books }) => (
+const Books = ({ books }) => 
+(
 
 
 
@@ -20,7 +21,7 @@ const Books = ({ books }) => (
             <img alt="" src={book.book_cover} />
           </div>
           <MarkdownPreview value={book.description} />
-          {/* <Retail retail={book.retail} /> */}
+          <Retail retail={book.retail} />
 
 
         </section>

@@ -3,22 +3,24 @@ import PropTypes from 'prop-types'
 
 
 
-const Retail = ({ retail }) => 
-
-(
-        
+const Retail = ({ retail }) => {
+        console.log(retail); 
+        const {stores = []} = retail;
+        return (
         <div>
-            <li>
-                {retail.map(store => (  
-                    <ul key={store.name}>
-                    <a href={store.url} target="_blank" rel="noopener noreferrer">{store.name}</a>                                           
-                    </ul>
-                 ))}
-            </li>    
-            <h1>hi</h1>
-        </div>
+            <ul>
+                {retail.map(store => ( 
 
-    )
+                    <li key={store.name}>
+                    <a href={store.url} target="_blank" rel="noopener noreferrer">{store.name}</a>                                           
+                    </li>
+                 ))}
+            </ul>    
+        </div>
+        )
+    }  
+
+
 
 Retail.propTypes = {
     retail: PropTypes.arrayOf(
