@@ -6,11 +6,18 @@ main:
     - book_cover: /assets/technically-scripted-cover.jpg
       subtitle: A Romantic Comedy of Errors
       title: Technically Scripted
+      retail:
+        - name: Amazon
+          url: https://www.amazon.ca/gp/product/B074YZTBZR?tag=
+        - name: iBooks
+          url: https://itunes.apple.com/ca/book/technically-scripted/id1397071995?mt=11&ign-mpt=uo%3D4
+        - name: Nook
+          url: https://www.barnesandnoble.com/w/technically-scripted-n-franko/1127017082?ean=2940155588801&st=AFF&2sid=Draft2Digital_7968444_NA&sourceId=AFFDraft2Digital
+        - name: Kobo
+          url: https://www.kobo.com/ca/en/ebook/technically-scripted-2
+        - name: Google Play Books
+          url: https://play.google.com/store/books/details?id=OH1fDwAAQBAJ
       description: >-
-
-
-        # _**THIS IS A TEST!!!**_
-
 
         **He’s a bad boy movie star. I'm just a failed reporter. This assignment
         was supposed to be temporary. So why does it feel like our love isn’t

@@ -5,6 +5,7 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 
+
 export const BooksPageTemplate = ({
   image,
   title,
@@ -39,7 +40,6 @@ export const BooksPageTemplate = ({
                 </h2>
               </div>
               <Books books={main.books}/>
-
               <Features gridItems={intro.blurbs} />
               <div className="columns">
                 <div className="column is-7">
@@ -106,7 +106,11 @@ BooksPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   main: PropTypes.shape({
-    books: PropTypes.array,
+    books: PropTypes.arrayOf(
+      PropTypes.shape({
+        retail: PropTypes.array,
+      })
+    ),
   }),
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -167,6 +171,10 @@ export const booksPageQuery = graphql`
             description
             subtitle
             title
+            retail {
+              name
+              url
+            }
           }
         }
         image

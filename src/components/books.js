@@ -1,10 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { MarkdownPreview } from 'react-marked-markdown';
+import Retail from '../components/Retail'
+
 
 
 
 const Books = ({ books }) => (
+
+
+
   <div className="columns is-multiline" >
     {books.map(book => (
       <div key={book.book_cover} className="column is-6">
@@ -15,9 +20,8 @@ const Books = ({ books }) => (
             <img alt="" src={book.book_cover} />
           </div>
           <MarkdownPreview value={book.description} />
-         {/* <div dangerouslySetInnerHTML={{ __html: book.description}} /> */}
-          
-          {/* {book.description} */}
+          {/* <Retail retail={book.retail} /> */}
+
 
         </section>
       </div>
@@ -32,6 +36,12 @@ Books.propTypes = {
       subtitle: PropTypes.string,
       book_cover: PropTypes.string,
       description: PropTypes.string,
+      retail: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string,
+          url: PropTypes.string,
+        }) 
+      ),
     })
   ),
 }

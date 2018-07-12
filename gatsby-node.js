@@ -16,14 +16,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             }
             frontmatter {
               templateKey
-              main {
-                books {
-                  book_cover
-                  description
-                  subtitle
-                  title
-                }
-              }  
             }
           }
         }
