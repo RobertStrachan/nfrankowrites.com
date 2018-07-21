@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({
-  image,
-  title, 
+export const FrontPageTemplate = ({
+  front_image,
+  front_title,
+  front_copy, 
   content, 
   contentComponent
 }) => {
@@ -18,9 +19,12 @@ export const AboutPageTemplate = ({
               <div className="section">
 
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {title}
+                  {front_title}
                 </h2>
-                <img src={image}/>
+                <img src={front_image}/>
+                <div>
+                    {front_copy}
+                </div>    
                 <PageContent className="content" content={content} />
               </div>
             </div>
@@ -30,40 +34,42 @@ export const AboutPageTemplate = ({
     )
 }
 
-AboutPageTemplate.propTypes = {
-    image: PropTypes.string,
-    title: PropTypes.string.isRequired,
+FrontPageTemplate.propTypes = {
+    front_image: PropTypes.string,
+    front_title: PropTypes.string.isRequired,
     content: PropTypes.string,
     contentComponent: PropTypes.func
 }
 
-const AboutPage = ({ data }) => {
+const FrontPage = ({ data }) => {
     const { markdownRemark : post } = data
     console.log(data);
 
     return (
-        <AboutPageTemplate
+        <FrontPageTemplate
             contentComponent={HTMLContent}
-            image={post.frontmatter.image}
-            title={post.frontmatter.title}
+            front_image={post.frontmatter.front_image}
+            front_title={post.frontmatter.front_title}
+            front_copy={post.frontmatter.front_copy}
             content={post.html}
         />
     )
 }
 
-AboutPage.propTypes = {
+FrontPage.propTypes = {
     data: PropTypes.object.isRequired,
   }
   
-  export default AboutPage
+  export default FrontPage
   
-  export const aboutPageQuery = graphql`
-    query AboutPage($id: String!) {
+  export const frontPageQuery = graphql`
+    query FrontPage($id: String!) {
       markdownRemark(id: { eq: $id }) {
         html
         frontmatter {
-          title
-          image
+          front_title
+          front_image
+          front_copy
         }
       }
       
